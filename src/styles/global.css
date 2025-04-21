@@ -110,11 +110,28 @@ body{
     color: var(--sub-title);
   }
 
+
+
+  .ingredientes div{
+    display:flex;
+    width: 100%;
+    height: 1px;
+    background-color: var(--sub-title);
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    opacity: 25%;
+  }
+
   .nurticion h1{
     font-family: var(--title-font);
     color: var(--sub-title);
     font-weight: 700;
     font-size: 32px;
+  }
+
+  .nurticion p{
+    color: var(--text-tilte);
   }
 
 
@@ -126,14 +143,35 @@ body{
     padding: 1rem;
   } 
 
+
   .celda {
     padding: 1rem;
     background-color: var();
     display: flex;
+    font-weight: bold;
+    color: var(--text-white);
+  }
+
+  .celda2 {
+    padding: 1rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    color: var(--sub-title);
   }
+
+  .celda,
+  .celda2 {
+  border-bottom: 1px solid rgb(194, 192, 192);
+  }
+
+  .celda:nth-last-child(-n+2),
+  .celda2:nth-last-child(-n+2) {
+  border-bottom: none;
+  }
+
+
 
   @media(max-width: 768px) {
 
